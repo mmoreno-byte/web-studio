@@ -18,8 +18,8 @@ const projects = [
     title: 'Consulta de Psicología',
     description:
       'Web profesional para psicólogo con sistema de reservas, información de servicios y formulario de contacto. Pensada para transmitir confianza y serenidad a quien llega por primera vez.',
-    main: '/projects/ana-portfolio-2.png',
-    secondary: '/projects/ana-portfolio-1.png',
+    main: '',
+    secondary: '',
     secondaryPos: 'br',
     url: 'https://psychology-web-9ga.pages.dev',
     reverse: true,
