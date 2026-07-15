@@ -19,7 +19,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Loli Moreno
+            Loli
           </a>
         </p>
       </div>
