@@ -1,0 +1,28 @@
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container footer-inner">
+        <div className="footer-brand">
+          <span className="footer-logo">MM<span>·</span>Web Studio</span>
+          <p>Páginas web para profesionales y pequeños negocios.</p>
+        </div>
+
+        <div className="footer-links">
+          <a href="mailto:mdmorenoinfor@gmail.com">mdmorenoinfor@gmail.com</a>
+          <a href="tel:+34662227498">+34 662 22 74 98</a>
+        </div>
+
+        <p className="footer-copy">
+          © {new Date().getFullYear()} MM Web Studio · Hecho por{' '}
+          <a
+            href="https://mmoreno-byte.github.io/portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Loli Moreno
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
+}
