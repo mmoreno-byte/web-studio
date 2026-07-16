@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "routePath": "/whatsapp",
+      "mountPath": "/",
+      "method": "",
+      "module": [
+        "whatsapp.js:onRequest"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}

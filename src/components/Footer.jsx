@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-links">
           <a href="mailto:info@mmoreno.dev">info@mmoreno.dev</a>
           <a 
-            href="/whatsapp"
+            href="/whatsapp"  // ← ESTO es lo que faltaba
             className="whatsapp-link"
             style={{
               background: 'none',

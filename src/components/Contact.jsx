@@ -5,8 +5,6 @@ import emailjs from '@emailjs/browser';
 const EMAIL = 'info@mmoreno.dev';
 // Mantenemos el Gmail como respaldo (lo ponemos en el texto del footer)
 const EMAIL_BACKUP = 'mdmorenoinfor@gmail.com';
-const PHONE = '+34 662 22 74 98';
-const PHONE_TEL = '+34662227498';
 
 export default function Contact() {
   const formRef = useRef();
@@ -61,7 +59,13 @@ export default function Contact() {
             </div>
             <div className="contact-block">
               <span className="contact-label">Teléfono</span>
-              <a href={`tel:${PHONE_TEL}`} className="contact-value">{PHONE}</a>
+              {/* 👇 CAMBIADO: ya no es tel: sino /whatsapp */}
+              <a href="/whatsapp" className="contact-value">
+                💬 WhatsApp
+              </a>
+              <span className="contact-muted" style={{ fontSize: '0.8rem', opacity: 0.7 }}>
+                (Solo mensajes, sin llamadas)
+              </span>
             </div>
             <div className="contact-block">
               <span className="contact-label">Horario</span>
