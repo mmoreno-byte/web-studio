@@ -5,19 +5,18 @@ export default function Hero() {
         <div className="hero-inner">
           <span className="eyebrow">MM Web Studio</span>
           <h1>
-            Tu web, <span className="accent">hecha con cuidado.</span>
+            Webs para pequeños negocios que necesitan presencia profesional sin complicaciones.
           </h1>
           <p className="hero-lead">
-            Diseño y desarrollo páginas web para profesionales y pequeños
-            negocios. Sin plantillas, sin prisas, sin sorpresas.
+            Diseño y desarrollo a medida. Presupuesto cerrado y soporte continuo. Sin tecnicismos ni sorpresas.
           </p>
 
           <div className="hero-ctas">
-            <a href="#trabajos" className="btn btn-primary">
-              Ver trabajos
+            <a href="#contacto" className="btn btn-primary">
+              Calcula tu presupuesto →
             </a>
-            <a href="#contacto" className="btn btn-ghost">
-              Hablemos
+            <a href="#trabajos" className="btn btn-ghost">
+              Ver trabajos
             </a>
           </div>
 

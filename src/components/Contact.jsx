@@ -1,7 +1,10 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const EMAIL = 'mdmorenoinfor@gmail.com';
+// Actualizado con tu nuevo correo profesional
+const EMAIL = 'info@mmoreno.dev';
+// Mantenemos el Gmail como respaldo (lo ponemos en el texto del footer)
+const EMAIL_BACKUP = 'mdmorenoinfor@gmail.com';
 const PHONE = '+34 662 22 74 98';
 const PHONE_TEL = '+34662227498';
 
@@ -24,6 +27,7 @@ export default function Contact() {
           from_email: formData.get('from_email'),
           project_type: formData.get('project_type'),
           message: formData.get('message'),
+          budget: formData.get('budget'), // Nuevo campo
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
@@ -40,11 +44,12 @@ export default function Contact() {
     <section id="contacto" className="contact">
       <div className="container">
         <div className="section-head reveal">
-          <span className="eyebrow">Contacto</span>
-          <h2>Hablemos sin compromiso.</h2>
+          <span className="eyebrow">Presupuesto</span>
+          <h2>¿Cuánto cuesta tu web?</h2>
           <p className="section-sub section-sub-light">
-            Te respondo en menos de 24 horas con ideas y un primer
-            acercamiento honesto. Sin formulario interminable, sin tecnicismos.
+            Te doy un presupuesto orientativo en menos de 24 horas. Sin compromiso, sin tecnicismos, sin sorpresas.
+            <br />
+            <strong>Respuesta garantizada en menos de 24h.</strong>
           </p>
         </div>
 
@@ -67,6 +72,12 @@ export default function Contact() {
               Si prefieres, escríbeme directamente por WhatsApp al mismo número.
               Atiendo consultas rápidas y presupuesto orientativo sin coste.
             </p>
+            
+            {/* Añadimos un pequeño extra de confianza */}
+            <div className="contact-trust">
+              <span>✅ Presupuesto cerrado desde el inicio</span>
+              <span>🔒 Sin sorpresas ni costes ocultos</span>
+            </div>
           </aside>
 
           <form
@@ -90,16 +101,27 @@ export default function Contact() {
               <input
                 type="text"
                 name="project_type"
-                placeholder="Diseño, mantenimiento, mejora..."
+                placeholder="Diseño desde cero, mejora, mantenimiento..."
               />
             </div>
 
+            {/* NUEVO CAMPO: Presupuesto aproximado */}
             <div className="form-group">
-              <label>Cuéntame</label>
+              <label>Presupuesto aproximado (opcional)</label>
+              <select name="budget" defaultValue="">
+                <option value="">Sin preferencia</option>
+                <option value="500-1000">500 € - 1.000 €</option>
+                <option value="1000-2000">1.000 € - 2.000 €</option>
+                <option value="2000+">Más de 2.000 €</option>
+              </select>
+            </div>
+
+            <div className="form-group">
+              <label>Cuéntame tu proyecto</label>
               <textarea
                 name="message"
                 rows="5"
-                placeholder="Qué tienes en mente, plazos, presupuesto aproximado..."
+                placeholder="¿Qué necesitas? ¿Para cuándo? ¿Qué te preocupa de tu web actual?"
                 required
               />
             </div>
@@ -109,17 +131,17 @@ export default function Contact() {
               className="contact-btn"
               disabled={status === 'sending'}
             >
-              {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
+              {status === 'sending' ? 'Enviando...' : 'Calcula tu presupuesto →'}
             </button>
 
             {status === 'success' && (
               <p className="contact-feedback success">
-                ✓ Mensaje enviado. Te respondo pronto.
+                ✓ ¡Mensaje enviado! Te respondo en menos de 24 horas con tu presupuesto.
               </p>
             )}
             {status === 'error' && (
               <p className="contact-feedback error">
-                Algo no salió bien. Escríbeme directo al email.
+                Algo no salió bien. Escríbeme directamente a {EMAIL} o por WhatsApp.
               </p>
             )}
           </form>

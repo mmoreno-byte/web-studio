@@ -411,7 +411,8 @@ section:first-of-type { border-top: 0; }
 .about-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;  /* ← Cambia esto */
+  object-position: top 20%;
   border-radius: var(--radius-lg);
   position: relative;
   z-index: 1;
