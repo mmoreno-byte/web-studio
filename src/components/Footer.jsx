@@ -1,122 +1,28 @@
-import { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-
-const EMAIL = 'info@mmoreno.dev';
-const PHONE = '+34 662 22 74 98';
-const PHONE_TEL = '+34662227498';
-
-export default function Contact() {
-  const formRef = useRef();
-  const [status, setStatus] = useState('idle');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('sending');
-
-    const formData = new FormData(formRef.current);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.get('from_name'),
-          from_email: formData.get('from_email'),
-          message: formData.get('message'),
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        setStatus('success');
-        formRef.current.reset();
-      })
-      .catch(() => {
-        setStatus('error');
-      });
-  };
-
+export default function Footer() {
   return (
-    <section id="contacto" className="contact">
-      <div className="container">
-        <div className="section-head reveal">
-          <span className="eyebrow">Presupuesto</span>
-          <h2>¿Cuánto cuesta tu web?</h2>
-          <p className="section-sub section-sub-light">
-            Te doy un presupuesto en menos de 24 horas. Sin compromiso, sin tecnicismos, sin sorpresas.
-          </p>
+    <footer className="footer">
+      <div className="container footer-inner">
+        <div className="footer-brand">
+          <span className="footer-logo">MM<span>·</span>Web Studio</span>
+          <p>Páginas web para profesionales y pequeños negocios.</p>
         </div>
 
-        <div className="contact-grid">
-          {/* Columna izquierda: Datos de contacto compactos */}
-          <aside className="contact-info reveal">
-            <div className="contact-block">
-              <span className="contact-label">Email</span>
-              <a href={`mailto:${EMAIL}`} className="contact-value">{EMAIL}</a>
-            </div>
-            <div className="contact-block">
-              <span className="contact-label">Teléfono</span>
-              <a href={`tel:${PHONE_TEL}`} className="contact-value">{PHONE}</a>
-            </div>
-            <div className="contact-block">
-              <span className="contact-label">Horario</span>
-              <span className="contact-value contact-muted">Lun – Vie, 9:00 – 19:00</span>
-            </div>
+        <div className="footer-links">
+          <a href="mailto:info@mmoreno.dev">info@mmoreno.dev</a>
+          <a href="tel:+34662227498">+34 662 22 74 98</a>
+        </div>
 
-            <p className="contact-note">
-              También por WhatsApp al mismo número. Consulta rápida y presupuesto sin coste.
-            </p>
-          </aside>
-
-          {/* Columna derecha: Formulario simplificado */}
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="contact-form reveal"
+        <p className="footer-copy">
+          © {new Date().getFullYear()} MM Web Studio · Hecho por{' '}
+          <a
+            href="https://mmoreno-byte.github.io/portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <div className="form-row">
-              <div className="form-group">
-                <label>Nombre</label>
-                <input type="text" name="from_name" required />
-              </div>
-              <div className="form-group">
-                <label>Email</label>
-                <input type="email" name="from_email" required />
-              </div>
-            </div>
-
-            {/* Selector ELIMINADO. Lo que el cliente escribe es suficiente */}
-
-            <div className="form-group">
-              <label>Cuéntame tu proyecto</label>
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="¿Qué necesitas? ¿Para cuándo? ¿Qué te preocupa de tu web actual?"
-                required
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="contact-btn"
-              disabled={status === 'sending'}
-            >
-              {status === 'sending' ? 'Enviando...' : 'Calcula tu presupuesto →'}
-            </button>
-
-            {status === 'success' && (
-              <p className="contact-feedback success">
-                ✓ Mensaje enviado. Te respondo en menos de 24 horas.
-              </p>
-            )}
-            {status === 'error' && (
-              <p className="contact-feedback error">
-                Algo no salió bien. Escríbeme directamente a {EMAIL} o por WhatsApp.
-              </p>
-            )}
-          </form>
-        </div>
+            Loli
+          </a>
+        </p>
       </div>
-    </section>
+    </footer>
   );
 }
