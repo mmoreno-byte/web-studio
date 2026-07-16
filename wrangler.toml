@@ -1,3 +1,6 @@
 name = "mm-web-studio"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "./dist"
+
+[vars]
+WHATSAPP_NUMBER = "34662227498"

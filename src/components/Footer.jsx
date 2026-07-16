@@ -9,7 +9,21 @@ export default function Footer() {
 
         <div className="footer-links">
           <a href="mailto:info@mmoreno.dev">info@mmoreno.dev</a>
-          <a href="tel:+34662227498">+34 662 22 74 98</a>
+          <a 
+            href="/whatsapp"
+            className="whatsapp-link"
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'inherit',
+              cursor: 'pointer',
+              textDecoration: 'underline',
+              font: 'inherit',
+              padding: 0,
+            }}
+          >
+            WhatsApp
+          </a>
         </div>
 
         <p className="footer-copy">
