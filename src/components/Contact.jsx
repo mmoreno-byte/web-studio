@@ -105,17 +105,6 @@ export default function Contact() {
               />
             </div>
 
-            {/* NUEVO CAMPO: Presupuesto aproximado */}
-            <div className="form-group">
-              <label>Presupuesto aproximado (opcional)</label>
-              <select name="budget" defaultValue="">
-                <option value="">Sin preferencia</option>
-                <option value="500-1000">500 € - 1.000 €</option>
-                <option value="1000-2000">1.000 € - 2.000 €</option>
-                <option value="2000+">Más de 2.000 €</option>
-              </select>
-            </div>
-
             <div className="form-group">
               <label>Cuéntame tu proyecto</label>
               <textarea
