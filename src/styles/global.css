@@ -578,12 +578,56 @@ section:first-of-type { border-top: 0; }
   user-select: none;
 }
 
+/* Estado de proyecto (Hecho / Pendiente) */
+.project-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 0 0 22px;
+  padding: 18px 20px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+.status-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.status-dot.done { background: #6B7F6E; }
+.status-dot.pending { background: #C7A26A; }
+.status-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.status-col li {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  padding: 4px 0;
+  line-height: 1.45;
+}
+
 @media (max-width: 800px) {
   .project-feature, .project-feature.reverse { grid-template-columns: 1fr; gap: 32px; padding: 40px 0; }
   .project-feature.reverse .project-images { order: 2; }
   .project-feature.reverse .project-info { order: 1; }
   .project-soon { grid-template-columns: 1fr; gap: 24px; padding: 36px 24px; }
   .project-soon-mark { text-align: left; font-size: 2.4rem; }
+  .project-status { grid-template-columns: 1fr; gap: 14px; }
 }
 
 /* ---------- Contacto ---------- */
