@@ -21,7 +21,7 @@ const projects = [
     main: 'projects/psicologia-1.png',
     secondary: 'projects/psicologia-2.png',
     secondaryPos: 'br',
-    url: 'npx wrangler pages deploy dist --project-name=psychology-web',
+    url: 'http://2bcc3952.psychology-web-9ga.pages.dev/',
     reverse: true,
     status: {
       done: [

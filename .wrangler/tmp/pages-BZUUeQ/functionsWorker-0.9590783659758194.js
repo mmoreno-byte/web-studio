@@ -11,7 +11,7 @@ function onRequest(context) {
 }
 __name(onRequest, "onRequest");
 
-// ../.wrangler/tmp/pages-opW6zY/functionsRoutes-0.15564957577374483.mjs
+// ../.wrangler/tmp/pages-BZUUeQ/functionsRoutes-0.5301406211099444.mjs
 var routes = [
   {
     routePath: "/whatsapp",
@@ -22,7 +22,7 @@ var routes = [
   }
 ];
 
-// ../../../Users/maria/AppData/Roaming/npm/node_modules/wrangler/node_modules/path-to-regexp/dist.es2015/index.js
+// ../node_modules/path-to-regexp/dist.es2015/index.js
 function lexer(str) {
   var tokens = [];
   var i = 0;
@@ -348,7 +348,7 @@ function pathToRegexp(path, keys, options) {
 }
 __name(pathToRegexp, "pathToRegexp");
 
-// ../../../Users/maria/AppData/Roaming/npm/node_modules/wrangler/templates/pages-template-worker.ts
+// ../node_modules/wrangler/templates/pages-template-worker.ts
 var escapeRegex = /[.+?^${}()|[\]\\]/g;
 function* executeRequest(request) {
   const requestPath = new URL(request.url).pathname;
