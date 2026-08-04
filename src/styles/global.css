@@ -607,8 +607,10 @@ section:first-of-type { border-top: 0; }
   border-radius: 50%;
   display: inline-block;
 }
-.status-dot.done { background: #6B7F6E; }
-.status-dot.pending { background: #C7A26A; }
+.status-dot.done,
+.status-dot.hecho { background: #6B7F6E; }
+.status-dot.pending,
+.status-dot.pendiente { background: #C7A26A; }
 .status-col ul {
   list-style: none;
   padding: 0;

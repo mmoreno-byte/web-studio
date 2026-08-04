@@ -50,14 +50,14 @@ const projects = [
     secondaryPos: 'br',
     url: 'https://931e1ab6.law-web.pages.dev',
     status: {
-      done: [
+      hecho: [
         'Diseño UI/UX y sistema de diseño coherente',
         'Maquetación completa (6 secciones)',
         'Navegación responsive con menú móvil',
         'Formulario de contacto funcional',
       ],
-      pending: [
-        'EmailJS configurado (awaiting client keys)',
+      pendiente: [
+        'EmailJS configurado (esperando claves del cliente)',
         'Calendly integración',
         'Datos personales reales del despacho',
         'Aviso legal y política de privacidad',
@@ -78,24 +78,24 @@ const projects = [
 function StatusPanel({ status }) {
   return (
     <div className="project-status">
-      <div className="status-col status-done">
+      <div className="status-col status-hecho">
         <h4>
-          <span className="status-dot done" aria-hidden="true" />
+          <span className="status-dot hecho" aria-hidden="true" />
           Hecho
         </h4>
         <ul>
-          {status.done.map((item) => (
+          {status.hecho.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
       </div>
-      <div className="status-col status-pending">
+      <div className="status-col status-pendiente">
         <h4>
-          <span className="status-dot pending" aria-hidden="true" />
+          <span className="status-dot pendiente" aria-hidden="true" />
           Pendiente
         </h4>
         <ul>
-          {status.pending.map((item) => (
+          {status.pendiente.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
