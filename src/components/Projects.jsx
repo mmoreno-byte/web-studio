@@ -44,11 +44,25 @@ const projects = [
     year: '2026',
     title: 'Despacho Jurídico',
     description:
-      'Sitio web completo para despacho de abogacía: presentación, áreas de práctica (civil, laboral, mercantil), proceso de trabajo, FAQ, formulario de contacto y footer legal. Paleta vino y gris-beige con tipografía moderna. Datos ficticios: el proyecto está listo para enseñar como demo.',
+      'Sitio web completo para despacho de abogacía: presentación, áreas de práctica (civil, laboral, mercantil), nuestro proceso, sobre nosotros, FAQ, formulario de contacto y footer legal. Paleta vino y gris-beige con tipografía moderna (Inter). Datos ficticios: el proyecto está listo para enseñar como demo.',
     main: 'projects/law-web-1.png',
     secondary: 'projects/law-web-2.png',
     secondaryPos: 'br',
     url: 'https://931e1ab6.law-web.pages.dev',
+    status: {
+      done: [
+        'Diseño UI/UX y sistema de diseño coherente',
+        'Maquetación completa (6 secciones)',
+        'Navegación responsive con menú móvil',
+        'Formulario de contacto funcional',
+      ],
+      pending: [
+        'EmailJS configurado (awaiting client keys)',
+        'Calendly integración',
+        'Datos personales reales del despacho',
+        'Aviso legal y política de privacidad',
+      ],
+    },
   },
   {
     id: 'proximamente',
