@@ -44,8 +44,10 @@ const projects = [
     year: '2026',
     title: 'Despacho Jurídico',
     description:
-      'Sitio web profesional para despacho de abogacía especializado en derecho civil, laboral y mercantil. Diseño elegante en tonos vino, navegación clara, formulario de contacto y secciones de áreas de práctica, proceso de trabajo y FAQ.',
+      'Sitio web completo para despacho de abogacía: presentación, áreas de práctica (civil, laboral, mercantil), proceso de trabajo, FAQ, formulario de contacto y footer legal. Paleta vino y gris-beige con tipografía moderna. Datos ficticios: el proyecto está listo para enseñar como demo.',
     main: 'projects/law-web-1.png',
+    secondary: 'projects/law-web-2.png',
+    secondaryPos: 'br',
     url: 'https://931e1ab6.law-web.pages.dev',
   },
   {
