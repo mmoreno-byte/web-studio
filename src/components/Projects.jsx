@@ -39,6 +39,16 @@ const projects = [
     },
   },
   {
+    id: 'derecho',
+    type: 'Web profesional · Abogacía',
+    year: '2026',
+    title: 'Despacho Jurídico',
+    description:
+      'Sitio web profesional para despacho de abogacía especializado en derecho civil, laboral y mercantil. Diseño elegante en tonos vino, navegación clara, formulario de contacto y secciones de áreas de práctica, proceso de trabajo y FAQ.',
+    main: 'projects/law-web-1.png',
+    url: 'https://931e1ab6.law-web.pages.dev',
+  },
+  {
     id: 'proximamente',
     type: 'En preparación',
     year: '2026',
