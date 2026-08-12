@@ -21,7 +21,7 @@ const projects = [
     main: 'projects/psicologia-1.png',
     secondary: 'projects/psicologia-2.png',
     secondaryPos: 'br',
-    url: 'http://2bcc3952.psychology-web-9ga.pages.dev/',
+    url: 'https://psychology-web-9ga.pages.dev/',
     reverse: true,
     status: {
       hecho: [
@@ -48,7 +48,7 @@ const projects = [
     main: 'projects/law-web-1.png',
     secondary: 'projects/law-web-2.png',
     secondaryPos: 'br',
-    url: 'https://931e1ab6.law-web.pages.dev',
+    url: 'https://law-web.pages.dev',
     status: {
       hecho: [
         'Diseño UI/UX y sistema de diseño coherente',
