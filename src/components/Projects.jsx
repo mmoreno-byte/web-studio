@@ -24,13 +24,13 @@ const projects = [
     url: 'http://2bcc3952.psychology-web-9ga.pages.dev/',
     reverse: true,
     status: {
-      done: [
+      hecho: [
         'Diseño UI/UX y sistema de diseño',
         'Maquetación completa (7 secciones)',
         'Avatar ilustrado SVG inline',
         'Aviso de crisis 024 en Contacto',
       ],
-      pending: [
+      pendiente: [
         'Calendly (esperando cuenta del cliente)',
         'Stripe (pagos)',
         'Datos personales reales',
