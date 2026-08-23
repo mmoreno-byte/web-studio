@@ -4,7 +4,7 @@ Sitio comercial minimalista para exhibir y vender servicios de desarrollo web.
 
 ## 🌐 Ver en vivo
 
-[mm-web-studio.pages.dev](https://mm-web-studio.pages.dev)
+[web-studio-19p.pages.dev](https://web-studio-19p.pages.dev)
 
 ## Stack
 
@@ -28,5 +28,5 @@ Copia `.env.example` a `.env` y rellena los valores de EmailJS (los mismos del p
 
 ```bash
 npm run build
-wrangler pages deploy dist --project-name=mm-web-studio
+wrangler pages deploy dist --project-name=web-studio
 ```
