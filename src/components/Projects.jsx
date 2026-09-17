@@ -65,6 +65,33 @@ const projects = [
     },
   },
   {
+    id: 'academia-idiomas',
+    type: 'Web profesional · Academia de idiomas',
+    year: '2026',
+    title: 'Academia Lingua',
+    description:
+      'Sitio web completo para escuela de idiomas: presentación, cursos por idioma (inglés, francés, alemán) con formatos y niveles, método de trabajo, sobre nosotros, FAQ y formulario de reserva de clase de prueba. Paleta azul y coral con tipografía Poppins + Inter. Datos ficticios: el proyecto está listo para enseñar como demo.',
+    main: 'projects/academy-web-1.jpg',
+    secondary: 'projects/academy-web-2.jpg',
+    secondaryPos: 'br',
+    url: 'https://academy-web-6rj.pages.dev',
+    reverse: true,
+    status: {
+      hecho: [
+        'Diseño UI/UX y sistema de diseño propio',
+        'Maquetación completa (6 secciones)',
+        'Navegación responsive con menú móvil',
+        'Formulario de contacto y reserva de clase de prueba',
+      ],
+      pendiente: [
+        'EmailJS configurado (esperando claves del cliente)',
+        'Calendario de disponibilidad de grupos',
+        'Datos personales reales de la academia',
+        'Aviso legal y política de privacidad',
+      ],
+    },
+  },
+  {
     id: 'proximamente',
     type: 'En preparación',
     year: '2026',
