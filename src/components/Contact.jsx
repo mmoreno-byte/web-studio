@@ -77,8 +77,8 @@ export default function Contact() {
               Atiendo consultas rápidas y presupuesto orientativo sin coste.
             </p>
             
-            {/* Añadimos un pequeño extra de confianza */}
             <div className="contact-trust">
+              <span>💶 Proyectos desde 350€</span>
               <span>✅ Presupuesto cerrado desde el inicio</span>
               <span>🔒 Sin sorpresas ni costes ocultos</span>
             </div>

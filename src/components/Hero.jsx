@@ -21,8 +21,7 @@ export default function Hero() {
           </div>
 
           <ul className="hero-bullets">
-            <li><span className="dot" /> Proyectos desde 350€</li>
-            <li><span className="dot" /> Presupuesto cerrado antes de empezar</li>
+            <li><span className="dot" /> Proyectos desde 350€, presupuesto cerrado</li>
             <li><span className="dot" /> Te explico cada paso en lenguaje claro</li>
             <li><span className="dot" /> Soporte y mantenimiento después</li>
           </ul>
