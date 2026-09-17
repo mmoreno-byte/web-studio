@@ -71,8 +71,8 @@ const projects = [
     title: 'Academia Lingua',
     description:
       'Sitio web completo para escuela de idiomas: presentación con avatar ilustrado de la fundadora, cursos por idioma (inglés, francés, alemán) con formatos y niveles, método de trabajo, sobre nosotros en primera persona, FAQ y formulario de reserva de clase de prueba. Paleta azul y coral con tipografía Poppins + Inter. Datos ficticios: el proyecto está listo para enseñar como demo.',
-    main: 'projects/academy-web-1.jpg',
-    secondary: 'projects/academy-web-2.jpg',
+    main: 'projects/academy-web-1-v2.jpg',
+    secondary: 'projects/academy-web-2-v2.jpg',
     secondaryPos: 'br',
     url: 'https://academy-web-6rj.pages.dev',
     reverse: true,
