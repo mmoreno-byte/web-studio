@@ -16,10 +16,10 @@ function App() {
       <Navbar />
       <main ref={mainRef}>
         <Hero />
+        <About />
         <Services />
         <Process />
         <Projects />
-        <About />
         <Contact />
       </main>
       <Footer />

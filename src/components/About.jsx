@@ -2,13 +2,12 @@ export default function About() {
   return (
     <section id="sobre-mi" className="about">
       <div className="container about-grid">
-        <div className="about- reveal">
-          {/* Cambio: la imagen ahora se recorta con object-fit: cover */}
+        <div className="about-photo reveal">
           <img
             src="/about.jpg"
             alt="Loli Moreno"
             style={{
-              objectPosition: 'top 20%', // Enfoca la parte superior (cara)
+              objectPosition: 'top center', // Enfoca cara y hombros
             }}
           />
           <div className="about-photo-frame" aria-hidden="true" />
