@@ -70,7 +70,7 @@ const projects = [
     year: '2026',
     title: 'Academia Lingua',
     description:
-      'Sitio web completo para escuela de idiomas: presentación, cursos por idioma (inglés, francés, alemán) con formatos y niveles, método de trabajo, sobre nosotros, FAQ y formulario de reserva de clase de prueba. Paleta azul y coral con tipografía Poppins + Inter. Datos ficticios: el proyecto está listo para enseñar como demo.',
+      'Sitio web completo para escuela de idiomas: presentación con avatar ilustrado de la fundadora, cursos por idioma (inglés, francés, alemán) con formatos y niveles, método de trabajo, sobre nosotros en primera persona, FAQ y formulario de reserva de clase de prueba. Paleta azul y coral con tipografía Poppins + Inter. Datos ficticios: el proyecto está listo para enseñar como demo.',
     main: 'projects/academy-web-1.jpg',
     secondary: 'projects/academy-web-2.jpg',
     secondaryPos: 'br',
